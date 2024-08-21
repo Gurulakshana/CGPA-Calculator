@@ -1,0 +1,861 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <div class="container">
+            <div id="main">
+                <h1>CGPA CALCULATOR</h1><hr>
+                <form action="#">
+                    <div class="semester"><p>Enter Semester 1 mark:</p> <button id="btn1" onclick="sem1()">Enter</button><b><p class="s1"></p></b></div><br>
+                    <div class="semester"><p>Enter Semester 2 mark:</p> <button id="btn1" onclick="sem2()">Enter</button><b><p class="s2"></p></b></div><br>
+                    <div class="semester"><p>Enter Semester 3 mark:</p> <button id="btn1" onclick="sem3()">Enter</button><b><p class="s3"></p></b></div><br>
+                    <div class="semester"><p>Enter Semester 4 mark:</p> <button id="btn1" onclick="sem4()">Enter</button><b><p class="s4"></p></b></div><br>
+                    <div class="semester"><p>Enter Semester 5 mark:</p> <button id="btn1" onclick="sem5()">Enter</button><b><p class="s5"></p></b></div><br>
+                    <div class="semester"><p>Enter Semester 6 mark:</p> <button id="btn1" onclick="sem6()">Enter</button><b><p class="s6"></p></b></div><br>
+                    <div class="semester"><p>Enter Semester 7 mark:</p> <button id="btn1" onclick="sem7()">Enter</button><b><p class="s7"></p></b></div><br>
+                    <div class="semester"><p>Enter Semester 8 mark:</p> <button id="btn1" onclick="sem8()">Enter</button><b><p class="s8"></p></b></div><br>
+                    <button id="calbut" onclick="cal()">Calculate CGPA</button>
+                    <h1 id="cgpa"></h1>
+                </form>
+            </div>
+        </div>
+        
+    <div id="hide"></div>
+        <div id="sem1">
+            <table class="semester-table">
+                <tr><td>Subjects</td><td> Credits</td><td>Grade</td></tr>
+                <tr><td>Communicative English</td><td>3</td>
+                    <td><select name="" id="s1c1">
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Heritage of Tamil</td><td>1</td>
+                    <td><select name="" id="s1c2">
+                        <option value="" disabled selected>select</option>
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Engineering Chemistry</td><td>3</td>
+                    <td><select name="" id="s1c3">
+                        <option value="" disabled selected>select</option>
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Matrices and Calculus</td><td>4</td>
+                    <td><select name="" id="s1c4">
+                        <option value="" disabled selected>select</option>
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Engineering Physics</td><td>3</td>
+                    <td><select name="" id="s1c5">
+                        <option value="" disabled selected>select</option>
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Problem Solving and Python Programming</td><td>3</td>
+                    <td><select name="" id="s1c6">
+                        <option value="" disabled selected>select</option>
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Physics and Chemistry Laboratory</td><td>2</td>
+                    <td><select name="" id="s1c7">
+                        <option value="" disabled selected>select</option>
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Problem Solving and Python Programming Laboratory</td><td>2</td>
+                    <td><select name="" id="s1c8">
+                        <option value="" disabled selected>select</option>
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Communicative English Laboratory</td><td>1</td>
+                    <td><select name="" id="s1c9">
+                        <option value="" disabled selected>select</option>
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td><button class="btn" onclick="calculate1()">Calculate</button></td></tr>
+            </table>
+        </div>
+        <div id="sem2">
+            <table class="semester-table">
+                <tr><td>Subjects</td><td> Credits</td><td>Grade</td></tr>
+                <tr><td>Technical English</td><td>3</td>
+                    <td><select name="" id="s2c1">
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                
+                <tr><td>Tamils and Technology</td><td>1</td>
+                    <td><select name="" id="s2c2">
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                
+                <tr><td>Statistics and numerical methods</td><td>4</td>
+                    <td><select name="" id="s2c3">
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                
+                <tr><td>Environmental Sciences and Sustainability</td><td>2</td>
+                    <td><select name="" id="s2c4">
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                
+                <tr><td>Physics for Computer Science Engineers</td><td>3</td>
+                    <td><select name="" id="s2c5">
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                
+                <tr><td>Engineerin Graphics</td><td>4</td>
+                    <td><select name="" id="s2c6">
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                
+                <tr><td>Programming in C</td><td>3</td>
+                    <td><select name="" id="s2c7">
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                
+                <tr><td>Engineering Practices Laboratory</td><td>2</td>
+                    <td><select name="" id="s2c8">
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                
+                <tr><td>Programming in C Laboratory</td><td>2</td>
+                    <td><select name="" id="s2c9">
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                
+                <tr><td>Technical English Laboratory</td><td>1</td>
+                    <td><select name="" id="s2c10">
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td><button class="btn" onclick="calculate2()">Calculate</button></td></tr>
+            </table>
+        </div>
+        <div id="sem3">
+            <table class="semester-table">
+                <tr><td>Subjects</td><td> Credits</td><td>Grade</td></tr>
+                <tr><td>Digital Principles and Computer Organisation</td><td>4</td>
+                    <td><select name="" id="s3c1">
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Foundations of Data Science</td><td>3</td>
+                    <td><select name="" id="s3c2">
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Data Structures</td><td>3</td>
+                    <td><select name="" id="s3c3">
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Object Oriented Programming</td><td>3</td>
+                    <td><select name="" id="s3c4">
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Operating System</td><td>4</td>
+                    <td><select name="" id="s3c5">
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Data Structures Laboratory</td><td>2</td>
+                    <td><select name="" id="s3c6">
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Object Oriented Programming Laboratory</td><td>2</td>
+                    <td><select name="" id="s3c7">
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Data Science Laboratory</td><td>2</td>
+                    <td><select name="" id="s3c8">
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Quantitative Aptitude & Verbal Reasoning</td><td>1</td>
+                    <td><select name="" id="s3c9">
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td><button class="btn" onclick="calculate3()">Calculate</button></td></tr>
+            </table>
+        </div>
+        <div id="sem4">
+            <table class="semester-table">
+                <tr><td>Subjects</td><td> Credits</td><td>Grade</td></tr>
+                <tr><td>Software Engineering</td><td>3</td>
+                    <td><select name="" id="s4c1" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Design and Analysis of Algorithm</td><td>4</td>
+                    <td><select name="" id="s4c2" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Discrete Mathematics</td><td>4</td>
+                    <td><select name="" id="s4c3" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Database Management System</td><td>3</td>
+                    <td><select name="" id="s4c4" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Java Programming</td><td>3</td>
+                    <td><select name="" id="s4c5" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Database Management System Laboratory</td><td>2</td>
+                    <td><select name="" id="s4c6" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Java Programming Laboratory</td><td>2</td>
+                    <td><select name="" id="s4c7" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Quantitative Aptitude&Behavioural Skills</td><td>1</td>
+                    <td><select name="" id="s4c8" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td><button class="btn" onclick="calculate4()">Calculate</button></td></tr>
+            </table>
+        </div>
+        <div id="sem5">
+            <table class="semester-table">
+                <tr><td>Subjects</td><td> Credits</td><td>Grade</td></tr>
+                <tr><td>Compiler Design</td><td>4</td>
+                    <td><select name="" id="s5c1" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Computer Networks</td><td>4</td>
+                    <td><select name="" id="s5c2" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Full Stack Programming</td><td>4</td>
+                    <td><select name="" id="s5c3" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Quantitative Aptitude & Communicative skills</td><td>1</td>
+                    <td><select name="" id="s5c4" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Open Elective course</td><td>3</td>
+                    <td><select name="" id="s5c5" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Professional Elective I</td><td>3</td>
+                    <td><select name="" id="s5c6" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Professional Elective II</td><td>3</td>
+                    <td><select name="" id="s5c7" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td><button class="btn" onclick="calculate5()">Calculate</button></td></tr>
+            </table>
+        </div>
+        <div id="sem6">
+            <table class="semester-table">
+                <tr><td>Subjects</td><td> Credits</td><td>Grade</td></tr>
+                <tr><td>Mobile Computing</td><td>3</td>
+                    <td><select name="" id="s6c1" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Cryptography and cyber security</td><td>4</td>
+                    <td><select name="" id="s6c2" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Artificial Intelligence and Machine Learning</td><td>4</td>
+                    <td><select name="" id="s6c3" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Mobile Application Development Lab</td><td>2</td>
+                    <td><select name="" id="s6c4" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Quantitative Aptitude & Soft Skills</td><td>1</td>
+                    <td><select name="" id="s6c5" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Open Elective course II</td><td>3</td>
+                    <td><select name="" id="s6c6" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Professional Elective III</td><td>3</td>
+                    <td><select name="" id="s6c7" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Professional Elective IV</td><td>3</td>
+                    <td><select name="" id="s6c8" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Mini Project</td><td>2</td>
+                    <td><select name="" id="s6c9" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td><button class="btn" onclick="calculate6()">Calculate</button></td></tr>
+            </table>
+        </div>
+        <div id="sem7">
+            <table class="semester-table">
+                <tr><td>Subjects</td><td> Credits</td><td>Grade</td></tr>
+                <tr><td>Human Values and Ethics</td><td>2</td>
+                    <td><select name="" id="s7c1" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Elective Management</td><td>3</td>
+                    <td><select name="" id="s7c2" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Open Elective III</td><td>3</td>
+                    <td><select name="" id="s7c3" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Professional Elective V</td><td>3</td>
+                    <td><select name="" id="s7c4" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Professional Elective VI</td><td>3</td>
+                    <td><select name="" id="s7c5" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td>Internship</td><td>1</td>
+                    <td><select name="" id="s7c6" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td><button class="btn" onclick="calculate7()">Calculate</button></td></tr>    
+            </table>
+        </div>
+        <div id="sem8">
+            <table class="semester-table">
+                <tr><td>Subjects</td><td> Credits</td><td>Grade</td></tr>
+                <tr><td>Project Work</td><td>10</td>
+                    <td><select name="" id="s8c1" >
+                        <option value="" disabled selected >select</option >
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C+</option>
+                        <option value="4">C</option>
+                        <option value="0">U</option>
+                    </select></td>
+                </tr>
+                <tr><td><button class="btn" onclick="calculate8()">Calculate</button></td></tr>    
+            </table>
+        </div>
+
+    </center>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
