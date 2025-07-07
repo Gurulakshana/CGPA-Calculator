@@ -46,7 +46,7 @@ body::before{
 }
 
 #main{
-    background-color: rgb(156, 105, 75);
+    background-color: #f8d7c6;
     border-radius:20px;
     padding: 20px 40px;
     box-shadow: 0 0 15px rgba(158, 131, 131, 0.1);
